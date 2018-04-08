@@ -19,7 +19,7 @@ class Artist
   end
 
   def song_count
-    Song.collect { |song| @@song_count += 1 }
+    Song.new.collect { |song| @@song_count += 1 }
   end
 
 end
