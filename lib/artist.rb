@@ -20,10 +20,8 @@ class Artist
   end
 
   def self.song_count
+    if self.new
     @@song_count
   end
-  def self.song_count=(value)
-    @@song_count = value
-  end
-
+  
 end
